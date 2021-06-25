@@ -1,3 +1,10 @@
 {
-  "inflation": "4ኛው ንግግር፡ ኢንፍሌሽን"
+  "introduction": "መግብያ",
+  "foreword": "መቅድም",
+  "capitalism": "1ኛው ንግግር፡ ካፒታሊዝም",
+  "socialism": "2ኛው ንግግር፡ ሶሻሊዝም",
+  "interventionism": "3ኛው ንግግር፡ ጣልቃ ገብነት",
+  "inflation": "4ኛው ንግግር፡ ኢንፍሌሽን",
+  "foreign-investment": "5ኛው ንግግር፡ የውጭ ኢንቬስትመንት",
+  "politics-and-ideas": "6ኛው ንግግር፡ ፖለቲካ እና ሀሳቦች"
 }
