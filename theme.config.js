@@ -23,12 +23,22 @@ export default {
   ),
   head: (
     <>
+      <meta name="theme-color" content="#ffffff" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta httpEquiv="Content-Language" content="am" />
       <meta
         name="description"
+        content="ኢኮኖሚክ ፖሊሲ - ሀሳቦች ለዛሬ እና ለነገ። ሶስተኛው እትም"
+      />
+      <meta name="og:title" content="ኢኮኖሚክ ፖሊሲ - ሀሳቦች ለዛሬ እና ለነገ" />
+      <meta
+        name="og:description"
         content="ኢኮኖሚክ ፖሊሲ። ሀሳቦች ለዛሬ እና ለነገ። ሶስተኛው እትም።"
       />
-      <meta name="og:title" content="ኢኮኖሚክ ፖሊሲ። ሀሳቦች ለዛሬ እና ለነገ። ሶስተኛው እትም።" />
+      <meta
+        name="twitter:site:domain"
+        content="https://book-economic-policy-thoughts-for-today-and-tomorrow.vercel.app/"
+      />
     </>
   ),
 };
