@@ -1,19 +1,32 @@
+import { useRouter } from "next/router";
+
 export default {
-  repository:
-    "https://github.com/mickykebe/book-economic-policy-thoughts-for-today-and-tomorrow", // project repo
-  docsRepository:
+  project: {
+    link: "https://github.com/mickykebe/book-economic-policy-thoughts-for-today-and-tomorrow",
+  },
+  docsRepositoryBase:
     "https://github.com/mickykebe/book-economic-policy-thoughts-for-today-and-tomorrow", // docs repo
-  branch: "master", // branch of docs
-  path: "/", // path of docs
-  titleSuffix: "",
-  nextLinks: true,
-  prevLinks: true,
-  search: true,
-  customSearch: null, // customizable, you can use algolia for example
-  darkMode: true,
-  footer: true,
-  footerText: `ኢኮኖሚክ ፖሊሲ። ሀሳቦች ለዛሬ እና ለነገ።`,
-  footerEditOnGitHubLink: true, // will link to the docs repo
+  useNextSeoProps() {
+    const { asPath } = useRouter();
+    if (asPath !== "/") {
+      return {
+        titleTemplate: "%s - (ኢኮኖሚክ ፖሊሲ - ሀሳቦች ለዛሬ እና ለነገ)",
+      };
+    }
+  },
+  editLink: {
+    text: "ለማስተካከል ይህንን ይጫኑ",
+  },
+  feedback: {
+    content: "ጥያቄ ወይም አስተያየት ይስጡን",
+  },
+  footer: {
+    text: (
+      <>
+        <span>ኢኮኖሚክ ፖሊሲ - ሀሳቦች ለዛሬ እና ለነገ</span>
+      </>
+    ),
+  },
   logo: (
     <>
       <span className="font-extrabold text-xl hidden md:inline">
